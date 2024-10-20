@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event registration</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">ContactUs</a></li>
+                    <li><a href="">Login</a></li>
+                </ul>
+                <button class="btn">SignUp</button>
+            </nav>
+            <div class="header-text">
+            <h1>Online <span>Technical</span> Event Registration</h1>
+            </div>
+        </div>
+    </div>
+    <div class="reg-form">
+        <h1>Registration Form</h1>
+    </div>
+    <center>
+    <fieldset>
+            <form action="" onsubmit="validate()">
+                <label>Name:</label>
+                <input type="text" placeholder="Enter name" name="Name" id="Name">
+                <br><br>
+                <label for="">Email:</label>
+                <input type="text" placeholder="Enter email" name="email" id="email">
+                <br><br>
+                <label for="cnum">Contact Number</label>
+                <input type="number" id="contact" placeholder="Enter number"><br><br>
+                <label for="eventname">Event name:</label>
+                <select name="event" id="eve">
+                  <option value="sel">select event</option>
+                  <option value="one">Conference on AI</option>
+                  <option value="two">Workshop on cloud computing</option>
+                  <option value="three">Seminar for development</option>
+                  <option value="four">Generative AI panel discussion</option>
+                  <option value="five">Smart India Hackathon</option>
+                </select><br><br>
+                <label for="tshirt">T-shirt Size</label>
+                <select name="t-shirt" id="shirt">
+                    <option value="s0">Select size</option>
+                    <option value="s1">Small</option>
+                    <option value="s2">Medium</option>
+                    <option value="s3">Large</option>
+                    <option value="s4">Extra Large</option>
+                </select>
+                <br><br>
+                <label for="diet">Dietary Restrictions</label>
+                <select name="yourdiet" id="diet_restrict">
+                    <option value="d0">select</option>
+                    <option value="d1">Vegetarian</option>
+                    <option value="d2">Vegan</option>
+                    <option value="d3">Gluten-free</option>
+                    <option value="d4">Other</option>
+                </select><br><br>
+                <label for="que">How did you hear about the event?</label>
+                <div class="form-check">
+                <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="radio" id="rad0" required>Social Media</label>
+                <label class="form-check-label1">
+                <input type="radio" class="form-check-input1" name="radio" id="rad1" >Friends/Family</label>
+                <label class="form-check-label2">
+                <input type="radio" class="form-check-input2" name="radio" id="rad2" >Website</label>
+                <label class="form-check-label3">
+                <input type="radio" class="form-check-input3" name="radio" id="rad3" >Other</label>
+                </div><br><br>
+                <button type="submit" class="btn-primary">Submit</button>
+                <button type="reset" class="btn-primary">Reset</button>  
+        </form>
+    </fieldset>
+</center>
+    <script src="form.js"></script>
+</body>
+</html>
